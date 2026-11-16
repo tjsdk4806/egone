@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "pretendard";
+  min-height: 2000px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+.list {
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+}
+.list a {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 80px;
+}
+.main-visual {
+  height: 100vh;
+  background-image: url(../images/main-visual.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-size: cover;
+}
+.main-visual .heading {
+  text-align: center;
+  font-size: 40px;
+}
+.main-visual .desc {
+  font-size: 20px;
+  font-weight: 600;
+}
+.main-visual .btn {
+  padding: 15px 50px;
+  border: 1px solid #999;
+  border-radius: 50px;
+  background-color: #fff;
+  margin-top: 50px;
+  transition: all 0.5s cubic-bezier(0, 0, 0.09, 0.87);
+}
+.main-visual .btn:hover {
+  background-color: bisque;
+  border-color: black;
+}
+.contents-box .heading-box {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.feature-box .list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.feature-box .list li {
+  position: relative;
+}
+.feature-box .list .img-box {
+  border-radius: 50px 50px 0 0;
+  overflow: hidden;
+}
+.feature-box .list .info-box {
+  border-radius: 50px;
+  position: absolute;
+  background-color: #ccc;
+  padding: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  bottom: -120px;
+}
+.feature-box .list .info-box h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.feature-box .list .info-box p {
+  color: #666;
+  line-height: 1.5;
+  height: 4.5em;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

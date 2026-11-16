@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grand-parent {
+        padding: 100px;
+        border: 1px solid #f00;
+        margin-top: 100px;
+        margin-left: 100px;
+        position: relative;
+      }
+      .parent {
+        padding: 100px;
+        border: 1px solid #f00;
+        margin-top: 100px;
+        margin-left: 100px;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #999;
+      }
+      .box01 {
+        background-color: #31b157;
+        position: absolute;
+        left: 100px;
+        top: 200px;
+      }
+      .box02 {
+        position: absolute;
+        background-color: #354ac4;
+        left: 0;
+        top: 0;
+      }
+      .box03 {
+        position: relative;
+        z-index: 99;
+        height: 300px;
+        background-color: #cc7033;
+      }
+      .sticky {
+        margin-top: 100px;
+        padding: 100px;
+        border: 1px solid #f00;
+        min-height: 5000px;
+      }
+      .sticky .header {
+        height: 150px;
+        background-color: #838383;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+      }
+      .sticky .main {
+        gap: 50px;
+        display: flex;
+        align-items: start;
+      }
+      .sticky .main .img {
+        /* scroll에 반응한다. */
+        position: sticky;
+        top: 100px;
+        background-color: #354ac4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grand-parent">
+      <div class="parent">
+        <div class="box box01">box01</div>
+        <div class="box box02">box02</div>
+        <div class="box box03">box03</div>
+      </div>
+    </div>
+    <div class="sticky">
+      <div class="header">header</div>
+      <div class="main">
+        <div class="img">
+          <img
+            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, beatae nihil architecto mollitia aliquam possimus totam voluptatibus
+          laborum voluptas error, cum quaerat! Error sit numquam amet, quod veritatis voluptatem voluptas quam impedit blanditiis iure eaque veniam? A
+          aliquam facere quibusdam eveniet ducimus. Quis qui inventore explicabo maxime sed quam totam laudantium cupiditate omnis temporibus, optio
+          molestias aperiam dolore quisquam aliquid atque unde soluta praesentium? Blanditiis commodi accusantium numquam repellendus necessitatibus
+          iusto omnis harum. Corrupti praesentium rem ex optio esse sit quibusdam hic ad. Quasi facere quo quod blanditiis? Numquam optio debitis
+          atque culpa possimus accusamus aliquid voluptate tempore dolor. Ex ratione libero quisquam ipsum qui maiores, ipsa repudiandae nobis
+          tenetur? Et aperiam distinctio provident. Illo, beatae officiis nobis molestias error nam repudiandae sed quaerat optio asperiores ab omnis
+          minus sint cum, nesciunt consequuntur dicta culpa animi obcaecati. Voluptate vero aliquam debitis maiores temporibus error eligendi nihil
+          explicabo et, vel, quosiusto enim placeat at, reiciendis corrupti ratione asperiores expedita similique id, eveniet deserunt?
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
